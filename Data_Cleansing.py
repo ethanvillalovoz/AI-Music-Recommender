@@ -1,4 +1,6 @@
 import csv
+import os
+import shutil
 
 def load_data(file_name):
     """
@@ -72,6 +74,26 @@ def save_cleaned_data(header, data, output_file, dialect):
         writer.writerow(header)
         writer.writerows(data)
 
+
+def move_file(source, destination):
+    # Check if the source file exists
+    if not os.path.isfile(source):
+        print(f"Source file '{source}' does not exist.")
+        return
+
+    # Ensure the destination directory exists; create it if not
+    dest_dir = os.path.dirname(destination)
+    if not os.path.exists(dest_dir):
+        os.makedirs(dest_dir)
+        print(f"Created destination directory '{dest_dir}'.")
+
+    try:
+        shutil.move(source, destination)
+        print(f"File moved from '{source}' to '{destination}' successfully.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+
 def main():
     # Load data from echonest.csv
     header, data, dialect = load_data('tracks.csv')
@@ -88,6 +110,8 @@ def main():
 
     # Save the cleaned data to a new CSV file.
     save_cleaned_data(header, unique_data, 'cleaned_tracks.csv', dialect)
+
+    move_file('cleaned_tracks.csv', './Cleaned_Data')
 
 if __name__ == '__main__':
     main()
