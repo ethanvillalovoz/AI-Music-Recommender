@@ -1,6 +1,6 @@
 # Artist Recommender System: Personalizing Music Discovery
 
-This repository contains the project **"Artist Recommender System: Personalizing Music Discovery"**, completed as part of the CPTS 440 Machine Learning course. The goal of this project is to build a personalized music recommender system that helps users discover new artists using collaborative filtering. We experimented with matrix factorization via SVD and evaluated model performance using real user listening data from Last.fm.
+This repository contains the project **"Artist Recommender System: Personalizing Music Discovery"**, completed as part of the CPTS 440 Artificial Intelligence course. The goal of this project is to build a personalized music recommender system that helps users discover new artists using collaborative filtering. We experimented with matrix factorization via SVD and evaluated model performance using real user listening data from Last.fm.
 
 ---
 
