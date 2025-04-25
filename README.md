@@ -29,7 +29,7 @@ The following documents and materials summarize the project and its outcomes:
 - [Project Proposal (PDF)](docs/CPTS_440_Project_Proposal.pdf): Includes our initial proposal and ideas for the project.
 
 ### 2. Project Write-Up
-- [Final Report (PDF)](docs/Artist_Recommender_System_Final_Report.pdf): Includes our thought process, problem formulation, solution overview, model implementation, evaluation metrics, and results.
+- [Final Report (PDF)](docs/Artist_Recommender_System_ Personalizing_Music_Discovery_Final_Report.pdf): Includes our thought process, problem formulation, solution overview, model implementation, evaluation metrics, and results.
 
 ### 3. Presentation Materials
 - [Presentation Slides](docs/440_Presentation.pdf)
